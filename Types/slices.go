@@ -52,6 +52,23 @@ func tictactoe() {
 	}
 }
 
+func appendSlice() {
+	var s []int
+	s = append(s, 0)
+	fmt.Println(s)
+	s = append(s, 1)
+	fmt.Println(s)
+	s = append(s, 2, 3, 4)
+	fmt.Println(s)
+}
+
+func rangeDemo() {
+	var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+	for i, v := range pow {
+		fmt.Printf("2**%d = %d\n", i, v)
+	}
+}
+
 func main() {
 	primes := [6]int{2, 3, 5, 7, 11, 13}
 
@@ -90,4 +107,8 @@ func main() {
 	createSliceWithMake()
 
 	tictactoe()
+
+	appendSlice()
+
+	rangeDemo()
 }
